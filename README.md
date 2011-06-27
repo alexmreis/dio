@@ -1,5 +1,5 @@
 DIO
----
+===
 
 Named towards the greatest heavy metal vocalist of all time - Ronnie James Dio (RIP), Dio is a small memory and disk footprint Sinatra-inspired web framework for Java. 
 
@@ -12,15 +12,15 @@ Sinatra is only but an inspiration to DIO's design, and it's not the project's d
 The project is still in a very early stage, so DO expect the API to change drastically in the upcoming months.
 
 Using DIO
-----------
+---------
 
-*# Configure the package where your Controllers will be found at DioConfig:
++ Configure the package where your Controllers will be found at DioConfig:
 
-         public static String basePackage = "com.alexmreis.dio.test";
+         `public static String basePackage = "com.alexmreis.dio.test"`;
 
-*# Create your controllers extending from DioController:
++ Create your controllers extending from DioController:
 
-@
+<code>
 public class Test implements DioController{
     public String get(Map<String, String> parameters) {
         return "<html><body><h1>Hello world!</h1></body></html>";
@@ -38,15 +38,15 @@ public class Test implements DioController{
         return null;
     }
 }
-@
+</code>
 
-*# Add your public assets ( CSS, JavaScript, Images, HTML files) to the public folder
++ Add your public assets ( CSS, JavaScript, Images, HTML files) to the public folder
 
-*# Start the DIO server:
++ Start the DIO server:
 
-        java com.alexmreis.dio.DioApplication
+        `java com.alexmreis.dio.DioApplication`
 
-*# Point your browser to http://localhost:3000/<controller name>
-        http://localhost:3000/test
++ Point your browser to http://localhost:3000/<controller name>
+        `http://localhost:3000/test`
 
-*# Enjoy non-painful, low memory footprint Java web development!
++ Enjoy non-painful, low memory footprint Java web development!
