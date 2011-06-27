@@ -16,36 +16,33 @@ Using DIO
 
 1. Configure the package where your Controllers will be found at DioConfig:
 
-         `public static String basePackage = "com.alexmreis.dio.test"`;
+         public static String basePackage = "com.alexmreis.dio.test";
 
 2. Create your controllers extending from DioController:
+<code>	
+		public class Test implements DioController{
+		    public String get(Map<String, String> parameters) {
+		        return "<html><body><h1>Hello world!</h1></body></html>";
+		    }
 
-	public class Test implements DioController{
-	    public String get(Map<String, String> parameters) {
-	        return "<html><body><h1>Hello world!</h1></body></html>";
-	    }
+		    public String put(Map<String, String> parameters) {
+		        return null;
+		    }
 
-	    public String put(Map<String, String> parameters) {
-	        return null;
-	    }
+		    public String delete(Map<String, String> parameters) {
+		        return null;
+		    }
 
-	    public String delete(Map<String, String> parameters) {
-	        return null;
-	    }
-
-	    public String post(Map<String, String> parameters) {
-	        return null;
-	    }
-	}
-
-
+		    public String post(Map<String, String> parameters) {
+		        return null;
+		    }
+		}</code>
 3. Add your public assets ( CSS, JavaScript, Images, HTML files) to the public folder
 
 4. Start the DIO server:
-
-        `java com.alexmreis.dio.DioApplication`
+        java com.alexmreis.dio.DioApplication
 
 5. Point your browser to http://localhost:3000/<controller name>
-        `http://localhost:3000/test`
+        http://localhost:3000/test
 
 6. Enjoy non-painful, low memory footprint Java web development!
