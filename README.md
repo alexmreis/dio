@@ -19,7 +19,7 @@ Using DIO
          public static String basePackage = "com.alexmreis.dio.test";
 
 2. Create your controllers extending from DioController:
-<code>	
+
 		public class Test implements DioController{
 		    public String get(Map<String, String> parameters) {
 		        return "<html><body><h1>Hello world!</h1></body></html>";
@@ -36,7 +36,7 @@ Using DIO
 		    public String post(Map<String, String> parameters) {
 		        return null;
 		    }
-		}</code>
+		}
 3. Add your public assets ( CSS, JavaScript, Images, HTML files) to the public folder
 
 4. Start the DIO server:
