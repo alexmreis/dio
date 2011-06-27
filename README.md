@@ -18,7 +18,7 @@ Using DIO
 
          public static String basePackage = "com.alexmreis.dio.test";
 
-2. Create your controllers extending from DioController:
+2. Create your controllers implementing DioController:
 
 		public class Test implements DioController{
 		    public String get(Map<String, String> parameters) {
