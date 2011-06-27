@@ -40,9 +40,11 @@ Using DIO
 3. Add your public assets ( CSS, JavaScript, Images, HTML files) to the public folder
 
 4. Start the DIO server:
+
 		java com.alexmreis.dio.DioApplication
 
-5. Point your browser to http://localhost:3000/[controller name]
+5. Point your browser to http://localhost:3000/[controller_name]
+		
 		http://localhost:3000/test
 
 6. Enjoy non-painful, low memory footprint Java web development!
